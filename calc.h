@@ -32,7 +32,7 @@ class Expression
 		return exp[pt - 1];
 	}
 	//处理数字串并返回一个double
-	double _next_num()
+	double _nextNum()
 	{
 		std::string num;
 		//是否为数字或小数点
@@ -93,7 +93,7 @@ class Expression
 		//如果是数字则直接返回
 		if (isdigit(_next()))
 		{
-			current = _next_num();
+			current = _nextNum();
 		}
 		//如果是数字则处理括号内内容
 		else if (_next() == '(')
